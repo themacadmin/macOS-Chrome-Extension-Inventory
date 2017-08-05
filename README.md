@@ -14,13 +14,16 @@ e.g.
 ## Can easily create extension attributes and/or reports...
 
 Get version when ID is known...
+
 `cat /Library/myOrg/Data/chromeExtensions.csv | awk -F "," '/lneaknkopdijkpnocmklfnjbeapigfbh/{print $2}'`
 
 Get ID when name is known...
-cat /Library/myOrg/Data/chromeExtensions.csv | awk -F "," '/Google Maps/{print $3}'
+
+`cat /Library/myOrg/Data/chromeExtensions.csv | awk -F "," '/Google Maps/{print $3}'`
 
 Get names of all extensions for user jappleseed
-cat /Library/myOrg/Data/chromeExtensions.csv | awk -F "," '/jappleseed/{print $1}'
+
+`cat /Library/myOrg/Data/chromeExtensions.csv | awk -F "," '/jappleseed/{print $1}'`
 
 ## com.themacadmin.chromeExtensionInventory.plist
 LaunchAgent, runs script when user's Chrome extension directory is changed.
