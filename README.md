@@ -15,15 +15,15 @@ e.g.
 
 ### Get version when ID is known...
 
-`cat /Library/myOrg/Data/chromeExtensions.csv | awk -F "," '/lneaknkopdijkpnocmklfnjbeapigfbh/{print $2}'`
+`awk -F "," '/lneaknkopdijkpnocmklfnjbeapigfbh/{print $2}' /Library/myOrg/Data/chromeExtensions.csv`
 
 ### Get ID when name is known...
 
-`cat /Library/myOrg/Data/chromeExtensions.csv | awk -F "," '/Google Maps/{print $3}'`
+`awk -F "," '/Google Maps/{print $3}' /Library/myOrg/Data/chromeExtensions.csv`
 
 ### Get names of all extensions for user jappleseed
 
-`cat /Library/myOrg/Data/chromeExtensions.csv | awk -F "," '/jappleseed/{print $1}'`
+`awk -F "," '/jappleseed/{print $1}' /Library/myOrg/Data/chromeExtensions.csv`
 
 ## com.themacadmin.chromeExtensionInventory.plist
 LaunchAgent, runs script when user's Chrome extension directory is changed.
