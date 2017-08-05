@@ -4,11 +4,12 @@ Chrome Extension Inventory for macOS
 Collects inventory of Chrome extensions in /Library/myOrg/Data/chromeExtensions.csv
 
 Format:
-*Extension name,version,extensionID,user's home folder
+
+*Extension name,version,extensionID,user's home folder*
 
 e.g.
 
-Google Maps,5.4.1,lneaknkopdijkpnocmklfnjbeapigfbh,/Users/jappleseed*
+*Google Maps,5.4.1,lneaknkopdijkpnocmklfnjbeapigfbh,/Users/jappleseed*
 
 Can easily create extension attributes and/or reports...
 
